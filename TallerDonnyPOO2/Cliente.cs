@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +9,14 @@ namespace TallerDonnyPOO2
 {
     internal class Cliente
     {
-        string Nombre;
-        string Documento;
-        string Direccion;
-        int Telefono;
+      public  string Nombre;
+        public string Documento;
+        public string Direccion;
+        public int Telefono;
+        public string validarDocumento;
 
+        /*
+         
         public void Setnombre(string nombre)
         {
             Nombre = nombre;
@@ -46,26 +50,8 @@ namespace TallerDonnyPOO2
         {
             return Telefono;
         }
+        */
 
-
-        static void ValidarDocumento(string documento)
-        {
-
-        }
-
-        public void Crearcliente()
-        {
-            //ACA SE COMIENZAN A LLENAR LOS DATOS DEL OBJETO.
-
-            Console.WriteLine("Ingrese el nombre");
-            Setnombre(Console.ReadLine());
-            Console.WriteLine("Ingrese la direccion");
-            Setdireccion(Console.ReadLine());
-            Console.WriteLine("Ingrese el telefono");
-            Setdtelefono(int.Parse(Console.ReadLine()));
-            Console.WriteLine("Ingrese el numero de la Cedula ");
-            Setdocumento(Console.ReadLine());
-        }
 
 
 
@@ -79,19 +65,9 @@ namespace TallerDonnyPOO2
             Console.WriteLine("\n5.Salir");
 
         }
-        public int Buscarcliente(int documento)
-        {
 
-            return 0;
-        }
-        public void Modificarcliente()
-        {
+        
 
-        }
-        public void Eliminarcliente()
-        {
-
-        }
     }
 
 
